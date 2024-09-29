@@ -3,7 +3,7 @@
 #### -- Project Status: [Active]
 
 ## Project Intro/Objective
-The purpose of this project is to investigate public opinion about different retailers (Migros - largest food retail in Switzerland; IKEA) - what do people share, what topics are on their minds when posting about these companies. The platform used is Mastodon, the Mastodon Social instance. Why is it of interest - one can gain insights around various things, like the reception of certain products, what products might be wished for, or of course image-related insights including sustainability, fairness, etc, These insights can be used by marketing, management or PR.
+The purpose of this project is to investigate public opinion about different retailers (Migros - largest food retail in Switzerland; IKEA) - what do people share, what topics are on their minds when posting about these companies. The platform used is Mastodon, more precisely the Mastodon Social instance. By using this source of information, one can gain insights around various things, like the reception of certain products, what products might be wished for, or of course image-related insights including sustainability, fairness, etc. These insights can be used by marketing, management or PR.
 
 ### Methods Used
 * Web Scraping
