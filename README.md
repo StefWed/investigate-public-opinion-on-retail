@@ -8,13 +8,14 @@ The purpose of this project is to investigate public opinion about different ret
 ### Methods Used
 * Web Scraping
 * Data Cleaning
-* Explorative Data Analysis
+* Explorative Data Analysis (among others with Natural LAnguage Toolkit)
 * to do: sentiment analysis
 
 ### Technologies
 * Python
 * Pandas, jupyter
 * Requests, BeautifulSoup
+* nltk
 
 ## Project Description
 
@@ -23,8 +24,11 @@ The purpose of this project is to investigate public opinion about different ret
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
 2. Create environment, install and load the libraries, modules, packages.
-3. Open the Jupyter notebook and go through it.
+3. Open the Jupyter notebook Migros on Mastodon and go through it step by step.
+
+   Lots of information, explanations as well as data cleaning included.
+5. More advanced (without lots of info but with sentiment analysis): IKEA on Mastodon (work in progress)
 
 ## Featured Notebooks
-* [Migros on Mastodon Prototype](link)
-* [IKEA on Mastodon Prototype](link)
+* [Migros on Mastodon Prototype](https://github.com/StefWed/investigate-public-opinion-on-retail/blob/main/notebooks/Mastodon_Migros_Prototype.ipynb)
+* [IKEA on Mastodon Prototype](https://github.com/StefWed/investigate-public-opinion-on-retail/blob/main/notebooks/Mastodon_Ikea_Prototype.ipynb)
