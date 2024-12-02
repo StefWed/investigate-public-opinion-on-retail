@@ -15,19 +15,19 @@ The purpose of this project is to investigate public opinion about different ret
 
 ### Technologies
 * Python
-* Pandas, jupyter
+* Pandas, Jupyter, Regex
+* Matplotlib
 * Requests, BeautifulSoup
 * nltk
 * itertools, collections
+* TextBlob
 
 ## Project Description
-As pointed out before, posts from the Mastodon Social and Mastodon World instances are being scraped using the Mastodon API. 
+The project uses the Mastodon API to scrape posts from the Mastodon Social and Mastodon World instances. The first example focuses on posts containing the hashtag #migros, starting from January 1, 2022. While relatively few posts were found, they were largely informative, with minimal customer feedback about products or preferences. The example highlights how to store results in a DataFrame and clean the data using libraries such as BeautifulSoup (for HTML content) and Python's apply() with lambda functions. The explode() function was used to handle lists in DataFrame columns.
 
-The idea was to start with an in-depth example with lots of information around the set-up, the packages used and code explanations. So, the starting project is Migros on Mastodon Social. Using the Mastodon API and the requests function, posts with the hashtag #migros are scrapped from 1st of January 2022 on. For that timeframe not many posts were returned. The toots seem to be more of an informative nature, there are not so many customers posting about favourite products or something they wish for or what they think in general about Migros. Still, the example shows how easy it is to store the result in a DataFrame. With help of the explode() function, the BeautifulSoup library (for the actual content which is in html) and some cases of apply() plus lambda function the Dataframe was cleaned.
+Hashtag analysis followed, identifying frequently used hashtags and those related to sustainability. The respective content of the posts was extracted to understand discussion themes. To analyze word frequencies, further text cleaning was performed, including removing URLs, fixing formatting issues with regex, and eliminating punctuation, stopwords, and collection words. After splitting the text into lowercase words, itertools flattened the list, and collections identified the 25 most common words. Bigram analysis was conducted to uncover relationships and themes, confirming the overall informative nature of the posts.
 
-In a next step, the hashtags were looked at. Which are most frequent, but also specific hashtags around the topic of sustainability plus the respectice content of the posts were extracted - to get an actual idea what people are posting around that topic. After that the general content of the toots was looked at closer, meaning word frequencies. To do so, the toots needed to be cleaned further. URLs were taken out, regex was useed to account for certain issues (like missing spaces between words), punctuation was removed, stopwords as well as collection words were removed to get a very clean list of toots, were counting makes sense. Obviously, the text needed to be splittedt in single words, the worde were put into lower case. After that itertools was used to flaten the list of lists (the list of toots) into one list of all the words. Finally collections was used to count and show the 25 most common words. Results can be found in the notebook, together with some interpretations. As a further experiment, so called bigrams were investigated. These two-word sequences are a helpful way to uncover relationships and themes within text data (further info at the end of [Migros on Mastodon Prototype](https://github.com/StefWed/investigate-public-opinion-on-retail/blob/main/notebooks/Mastodon_Migros_Prototype.ipynb)). The result confirms the finding, that the posts are overall of an informative nature.
-
-(Followed by: IKEA on Mastodon)
+A second notebook focused on #ikea, with posts scraped from the Mastodon World instance. Here, functions were introduced to streamline tasks like scraping and cleaning. Python's input() function made the process interactive, allowing users to specify hashtags and date ranges. Results were stored in a CSV file to avoid repeated API calls and potential blocks. This sub-project also included sentiment analysis using the TextBlob library. The concepts of polarity and subjectivity were explored, with results visualized in plots. Limitations of TextBlob in analyzing short, informal Mastodon posts were discussed, suggesting the need for alternative tools for better sentiment accuracy.
 
 ## Getting Started
 
