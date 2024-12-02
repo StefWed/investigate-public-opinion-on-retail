@@ -10,8 +10,8 @@ The purpose of this project is to investigate public opinion about different ret
 * Cleaning a DataFrame using among others: the explode() function, the apply() function together with lambda function, defining functions for specific tasks together with lambda function
 * Cleaning toots using Regex
 * Explorative Data Analysis, word frequencies (with Natural Language Toolkit - nltk)
-  
-* to do: sentiment analysis
+* Sentiment Analysis
+* Data Visualization
 
 ### Technologies
 * Python
